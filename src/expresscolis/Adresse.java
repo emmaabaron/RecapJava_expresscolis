@@ -14,6 +14,13 @@ public class Adresse {
     private String ville;
     private String numeroVoie;
     
+    public Adresse(String numeroVoie, int codePostal, String ville, String pays){
+        this.numeroVoie=numeroVoie;
+        this.codePostal=codePostal;
+        this.ville=ville;
+        this.pays=pays;
+    }
+    
     public boolean estEnFrance(){
         if (pays.equals("France")){
             return true;
@@ -22,4 +29,5 @@ public class Adresse {
             return false;
         }       
     }
+    
 }
